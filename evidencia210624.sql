@@ -1,0 +1,10 @@
+use ejercico210618;
+select * from Tabla group by id;
+select nombre from Empleado group by Edad;
+select * from Libro group by categoria;
+select max(sueldo), departamento from Empleado group by departamento;
+select min(sueldo), departamento from Empleado group by departamento;
+select count(idEmpleado) as numEmpleado, departamento from Empleado group by departamento;
+select sum(sueldo) from Empleado;
+select count(ejemplares) as ejemplares, editorial from Libro group by editorial;
+select sum(ejemplares) as total from Libro;
